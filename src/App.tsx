@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route } from "react-router-dom";
-import { Home, Contact, Projects, Resume } from "./components/index";
+import { Home, Contact, Projects, Resume, Header } from "./components/index";
 
 const App: React.FC = () => {
     return (
         <div className="App">
+            <Header />
             <BrowserRouter>
                 <Route path="/" exact component={Home} />
                 <Route path="/contact" exact component={Contact} />
