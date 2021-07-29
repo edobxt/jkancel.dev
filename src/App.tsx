@@ -6,8 +6,8 @@ import { Home, Contact, Projects, Resume, Header } from "./components/index";
 const App: React.FC = () => {
     return (
         <div className="App">
-            <Header />
             <BrowserRouter>
+                <Header />
                 <Route path="/" exact component={Home} />
                 <Route path="/contact" exact component={Contact} />
                 <Route path="/projects" exact component={Projects} />
