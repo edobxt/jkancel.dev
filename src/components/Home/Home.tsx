@@ -1,11 +1,12 @@
 import * as React from "react";
 import "./Home.css";
 import ReactTypingEffect from "react-typing-effect";
+import { Button, BlockPresentation } from "../index";
 
 interface Props {}
 
 export const Home: React.FC<Props> = () => {
-    const textToType: string[] = ["developer", "student"];
+    const textToType: string[] = ["developer !", "student !"];
 
     return (
         <div>
@@ -16,12 +17,16 @@ export const Home: React.FC<Props> = () => {
                     Hi 👋 I'm Jonathan, a{" "}
                     <ReactTypingEffect
                         text={textToType}
-                        speed={100}
+                        speed={75}
                         typingDelay={1000}
                         eraseDelay={2000}
                     />
                 </p>
             </div>
+            <br />
+            <Button value="Contact Me" path="contact" />
+            <br />
+            <BlockPresentation />
         </div>
     );
 };
