@@ -4,5 +4,5 @@ import "./Home.css";
 interface Props {}
 
 export const Home: React.FC<Props> = () => {
-    return <div>Home</div>;
+    return <div>Welcome to my website ! 🚀</div>;
 };

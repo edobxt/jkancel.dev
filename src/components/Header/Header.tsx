@@ -8,12 +8,22 @@ interface Props {}
 export const Header: React.FC<Props> = () => {
     return (
         <div className="grid grid-cols-3 gap-2">
-            <img src={logo} alt="kj-logo" className="h-20" />
+            <Link to="/">
+                <img src={logo} alt="kj-logo" className="h-20" />
+            </Link>
             <div className="flex space-x-8 items-center place-self-center">
-                <Link to="/">Home</Link>
-                <Link to="/resume">Resume</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="/">
+                    <span>Home</span>
+                </Link>
+                <Link to="/resume">
+                    <span>Resume</span>
+                </Link>
+                <Link to="/projects">
+                    <span>Projects</span>
+                </Link>
+                <Link to="/contact">
+                    <span>Contact</span>
+                </Link>
             </div>
         </div>
     );
