@@ -5,6 +5,8 @@
     border: 1px solid;
     background-color: white;
     margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .avatar {
@@ -18,4 +20,5 @@
 
 .presentation-text {
     margin: 50px auto;
+    padding: 0 50px;
 }

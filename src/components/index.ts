@@ -5,3 +5,6 @@ export { Resume } from "./Resume/Resume";
 export { Header } from "./Header/Header";
 export { Button } from "./Button/Button";
 export { BlockPresentation } from "./BlockPresentation/BlockPresentation";
+export { ParticlesBackground } from "./Particles/ParticlesBackground";
+export { SkillSection } from "./SkillsSection/SkillSection";
+export { SkillItem } from "./SkillItem/SkillItem";

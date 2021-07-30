@@ -1,0 +1,14 @@
+.skill-item {
+    border: 1px solid;
+    padding: 10px;
+    margin-top: 10px;
+    width: 250px;
+}
+
+.skill-logo {
+    margin: 0 auto;
+}
+
+.skill-name {
+    font-weight: bold;
+}
