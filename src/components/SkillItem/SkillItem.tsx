@@ -29,9 +29,6 @@ export const SkillItem: React.FC<Props> = (name, logo) => {
             skillLogo = <img src={storage} alt="storage-logo" />;
     }
 
-    // Contenu final du SkillItem
-    let finalSkillValue;
-
     // Contenu du SkillItem à partir des props
     const skillValueWithLogo = (
         <div>
