@@ -1,0 +1,21 @@
+.ProjectItem {
+    border: 1px solid;
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    position: relative;
+}
+
+.ProjectItem:hover {
+    border: 2px solid;
+}
+
+.button-project {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 25px;
+}
+
+.description-project {
+    padding: 10px;
+}
