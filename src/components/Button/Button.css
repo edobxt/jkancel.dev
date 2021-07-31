@@ -3,4 +3,13 @@ button {
     border-radius: 2px;
     padding: 10px;
     background-color: #dcfffb;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+button:hover {
+    background-color: #fefefe;
 }
