@@ -3,6 +3,18 @@
     padding: 10px;
     margin-top: 10px;
     width: 250px;
+    position: relative;
+
+    background-color: #fce7f3;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.skill-item:hover {
+    background-color: #fefefe;
 }
 
 .skill-logo {
@@ -11,4 +23,13 @@
 
 .skill-name {
     font-weight: bold;
+}
+
+.skill-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
 }

@@ -6,7 +6,7 @@ import { Button, BlockPresentation, SkillSection } from "../index";
 interface Props {}
 
 export const Home: React.FC<Props> = () => {
-    const textToType: string[] = ["developer !", "student !"];
+    const textToType: string[] = ["developer !", "student !", "passionate !"];
 
     return (
         <div>

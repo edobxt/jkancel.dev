@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./BlockPresentation.css";
 import logo from "../../assets/pp_lumiere2web_mini.png";
+import { Button } from "../index";
 
 interface Props {}
 
@@ -9,12 +10,13 @@ export const BlockPresentation: React.FC<Props> = () => {
         <div className="presentation">
             <img src={logo} alt="avatar" className="avatar" />
             <div className="presentation-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                sit amet erat erat. Duis finibus dapibus fermentum. Mauris id
-                odio maximus, accumsan mi at, venenatis enim. Suspendisse at
-                rutrum ipsum. Nam eget porttitor urna. Aenean eleifend
-                pellentesque nisl eu facilisis.
+                I'm a junior developer and a student based in Guadeloupe a
+                french caribbean island. I have been passionate about IT since
+                childhood, development allows me to express myself and help
+                others in their problems. If you want to collaborate with me
+                don't hesitate, get in touch !!
             </div>
+            <Button value="View my resume" path="resume" />
         </div>
     );
 };

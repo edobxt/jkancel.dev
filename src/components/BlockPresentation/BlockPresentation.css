@@ -1,7 +1,7 @@
 .presentation {
     width: auto;
-    max-width: 700px;
-    height: 450px;
+    max-width: 650px;
+    height: 425px;
     border: 1px solid;
     background-color: white;
     margin: 0 auto;
@@ -15,10 +15,10 @@
     border: 2px solid #fefefe;
     border-radius: 50%;
     background-color: #dcfffb;
-    margin: 50px auto;
+    margin: 25px auto;
 }
 
 .presentation-text {
-    margin: 50px auto;
+    margin: 25px auto;
     padding: 0 50px;
 }

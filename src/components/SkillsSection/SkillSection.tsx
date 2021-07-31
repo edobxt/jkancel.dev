@@ -11,9 +11,21 @@ export const SkillSection: React.FC<Props> = () => {
                 My Skills
             </p>
             <div className="inline-flex space-x-4">
-                <SkillItem logo="code" name="Web Development" />
-                <SkillItem logo="review" name="Code Review" />
-                <SkillItem logo="storage" name="Database Management" />
+                <SkillItem
+                    logo="code"
+                    name="Web Development"
+                    description="HTML, CSS, JS, React, PHP"
+                />
+                <SkillItem
+                    logo="review"
+                    name="Code Review"
+                    description="Check if your code is good and convenent."
+                />
+                <SkillItem
+                    logo="storage"
+                    name="Database Management"
+                    description="Manage database with phpMyAdmin."
+                />
             </div>
         </div>
     );
