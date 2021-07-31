@@ -1,0 +1,10 @@
+.mail-box {
+    border: 1px solid;
+    background-color: #fefefe;
+    width: 500px;
+    height: 180px;
+    padding: 25px;
+
+    position: relative;
+    margin: 25px auto;
+}
