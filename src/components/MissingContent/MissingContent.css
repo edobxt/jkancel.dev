@@ -1,0 +1,8 @@
+.missing-content {
+    display: grid;
+    height: 100%;
+}
+
+.missing-content > p {
+    margin: 100px auto;
+}
