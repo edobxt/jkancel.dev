@@ -9,3 +9,5 @@ export { ParticlesBackground } from "./Particles/ParticlesBackground";
 export { SkillSection } from "./SkillsSection/SkillSection";
 export { SkillItem } from "./SkillItem/SkillItem";
 export { MissingContent } from "./MissingContent/MissingContent";
+export { ProjectItem } from "./ProjectItem/ProjectItem";
+export { ProjectBadge } from "./ProjectBadge/ProjectBadge";

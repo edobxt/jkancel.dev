@@ -1,0 +1,26 @@
+.ProjectItem {
+    border: 1px solid;
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    position: relative;
+    background-color: #fefefe;
+}
+
+.ProjectItem:hover {
+    border: 2px solid;
+}
+
+.button-project {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 25px;
+}
+
+.badges-project {
+    display: flex;
+    flex-wrap: wrap;
+    left: 10;
+    width: 95%;
+    height: max-content;
+}
