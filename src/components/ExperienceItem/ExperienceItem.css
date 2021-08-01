@@ -1,11 +1,11 @@
 .experience-item {
-    width: 70%;
+    max-width: 90%;
     margin: 0 auto;
     display: flex;
 }
 
 .experience-date {
-    width: 20%;
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;

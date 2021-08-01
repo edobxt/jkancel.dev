@@ -5,6 +5,7 @@ interface Props {
     title: string;
     date: string;
     description?: string;
+    option?: string;
 }
 
 export const ExperienceItem: React.FC<Props> = (props) => {
@@ -21,6 +22,12 @@ export const ExperienceItem: React.FC<Props> = (props) => {
                             <div className="experience-description">
                                 {props.description}
                             </div>
+                        );
+                    }
+
+                    if (props.option) {
+                        return (
+                            <p className="font-medium">{`option ${props.option}`}</p>
                         );
                     }
                 })()}

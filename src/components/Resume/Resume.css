@@ -18,3 +18,26 @@
     padding: 10px;
     margin: 10px;
 }
+
+.infos {
+    padding: 10px;
+    text-align: start;
+}
+
+.database-logo {
+    width: 150px;
+    margin: auto;
+}
+
+.software-logo {
+    width: 100px;
+    margin: auto;
+}
+
+.skill-section {
+    padding: 10px;
+}
+
+.office-section-text {
+    text-align: start;
+}
