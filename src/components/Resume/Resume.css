@@ -1,0 +1,20 @@
+.Resume {
+    max-width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.block-section {
+    background-color: #fefefe;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.full-w-section {
+    background-color: #fefefe;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}

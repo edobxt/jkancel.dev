@@ -1,0 +1,19 @@
+.experience-item {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.experience-date {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid;
+}
+
+.experience-title {
+    width: 100%;
+    text-align: start;
+    padding: 10px;
+}
