@@ -1,0 +1,10 @@
+.progress-bar-component {
+    padding: 10px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: start;
+}
+
+.progress-bar {
+    border: 1px solid;
+}

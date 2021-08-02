@@ -1,0 +1,61 @@
+.Resume {
+    max-width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.block-section {
+    background-color: #fefefe;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.full-w-section {
+    background-color: #fefefe;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.infos {
+    padding: 10px;
+    margin: 10px;
+    text-align: start;
+}
+
+.database-logo {
+    width: 150px;
+    margin: auto;
+}
+
+.software-logo {
+    width: 100px;
+    margin: auto;
+}
+
+.skill-section {
+    padding: 10px;
+}
+
+.office-section-text {
+    text-align: start;
+}
+
+.infos-title {
+    text-align: center;
+    padding: 10px;
+}
+
+.info > p {
+    margin: 5px 0;
+}
+
+#download-button > button {
+    margin: 10px;
+}
+
+#download-section {
+    margin: 55px auto;
+}
