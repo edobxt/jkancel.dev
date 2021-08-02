@@ -14,6 +14,11 @@ export const InfoBar: React.FC<Props> = (props) => {
         case "dev":
             bgColor = "#fefefe";
             txtColor = "#000";
+            break;
+        case "maintenace":
+            bgColor = "red";
+            txtColor = "#fefefe";
+            break;
     }
 
     const styles = {
