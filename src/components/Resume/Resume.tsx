@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./Resume.css";
-import { ExperienceItem, ProgressBar } from "../index";
+import { ExperienceItem, ProgressBar, InfosBadge } from "../index";
 import ReactTypingEffect from "react-typing-effect";
 import phpmyadmin from "../../assets/phpmyadmin-logo.png";
 import mysql from "../../assets/mysql-logo.png";
@@ -23,6 +23,17 @@ export const Resume: React.FC<Props> = () => {
         "education",
     ];
 
+    const currentYear: number = new Date().getFullYear();
+    const myAge: number = currentYear - 2002;
+
+    const myQualities: string[] = [
+        "motivation",
+        "curiosity",
+        "creative",
+        "competitive",
+        "sociable",
+    ];
+
     return (
         <div className="Resume">
             <p className="text-3xl">
@@ -40,7 +51,66 @@ export const Resume: React.FC<Props> = () => {
                 <div className="block-section">
                     <p className="text-2xl font-bold italic">Who am I ?</p>
                     <div className="infos">
-                        <p>Full Name : KANCEL Jonathan</p>
+                        <div className="infos-section">
+                            <div className="grid grid-cols-2">
+                                <p>
+                                    First Name :{" "}
+                                    <span className="text-lg font-semibold">
+                                        Jonathan
+                                    </span>
+                                </p>
+                                <p>
+                                    Last Name :{" "}
+                                    <span className="text-lg font-semibold">
+                                        Kancel
+                                    </span>
+                                </p>
+                            </div>
+                            <div className="grid grid-cols-2">
+                                <p>
+                                    Age :{" "}
+                                    <span className="text-lg font-semibold">{`${myAge} yo`}</span>
+                                </p>
+                                <p>
+                                    Date of Birth :{" "}
+                                    <span className="text-lg font-semibold">
+                                        29/09/2002
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="infos-section">
+                            <div className="infos-title">
+                                <p className="text-xl">Language Skills</p>
+                            </div>
+                            <div className="infos-language-item">
+                                <p>
+                                    French :{" "}
+                                    <span className="text-lg font-semibold">
+                                        Native
+                                    </span>
+                                </p>
+                            </div>
+                            <div className="divider"></div>
+                            <div className="infos-language-item">
+                                <p>
+                                    English :{" "}
+                                    <span className="text-lg font-semibold">
+                                        Advanced
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="infos-section">
+                            <div className="infos-title">
+                                <p className="text-xl">My qualities</p>
+                            </div>
+                            <div className="flex flex-wrap space-x-4">
+                                {myQualities.map((quality) => (
+                                    <InfosBadge title={quality} />
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="block-section">
@@ -49,7 +119,7 @@ export const Resume: React.FC<Props> = () => {
                     </p>
                     <div className="skills">
                         <div className="skill-section">
-                            <p className="skills-title text-lg">
+                            <p className="skills-title text-xl">
                                 Programmation
                             </p>
                             <ProgressBar
@@ -76,7 +146,7 @@ export const Resume: React.FC<Props> = () => {
                             />
                         </div>
                         <div className="skill-section">
-                            <p className="skills-title text-lg">
+                            <p className="skills-title text-xl">
                                 Database Management
                             </p>
                             <ProgressBar title="SQL" progressPercentage={80} />
@@ -99,7 +169,7 @@ export const Resume: React.FC<Props> = () => {
                             </div>
                         </div>
                         <div className="skill-section">
-                            <p className="skills-title text-lg">
+                            <p className="skills-title text-xl">
                                 Softwares and IDE's
                             </p>
                             <div className="software-logo-container grid grid-cols-3 gap-2">
@@ -121,7 +191,7 @@ export const Resume: React.FC<Props> = () => {
                             </div>
                         </div>
                         <div className="skill-section">
-                            <p className="skills-title text-lg">
+                            <p className="skills-title text-xl">
                                 Cloud Hosting Services
                             </p>
                             <div className="software-logo-container grid grid-cols-2">
@@ -138,7 +208,7 @@ export const Resume: React.FC<Props> = () => {
                             </div>
                         </div>
                         <div className="skill-section">
-                            <p className="skills-title text-lg">Office tools</p>
+                            <p className="skills-title text-xl">Office tools</p>
                             <p className="office-section-text">
                                 Maîtrise experte de la suite Microsoft (Word,
                                 Excel, Powerpoint) et Google Workspace.
