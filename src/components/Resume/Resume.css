@@ -42,3 +42,20 @@
 .office-section-text {
     text-align: start;
 }
+
+.infos-title {
+    text-align: center;
+    padding: 10px;
+}
+
+.info > p {
+    margin: 5px 0;
+}
+
+#download-button > button {
+    margin: 10px;
+}
+
+#download-section {
+    margin: 55px auto;
+}

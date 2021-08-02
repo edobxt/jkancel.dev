@@ -34,6 +34,14 @@ export const Resume: React.FC<Props> = () => {
         "sociable",
     ];
 
+    const myInterest: string[] = [
+        "music",
+        "videos",
+        "new technologies",
+        "programming",
+        "sciences",
+    ];
+
     return (
         <div className="Resume">
             <p className="text-3xl">
@@ -52,7 +60,7 @@ export const Resume: React.FC<Props> = () => {
                     <p className="text-2xl font-bold italic">Who am I ?</p>
                     <div className="infos">
                         <div className="infos-section">
-                            <div className="grid grid-cols-2">
+                            <div className="info grid grid-cols-2">
                                 <p>
                                     First Name :{" "}
                                     <span className="text-lg font-semibold">
@@ -65,8 +73,7 @@ export const Resume: React.FC<Props> = () => {
                                         Kancel
                                     </span>
                                 </p>
-                            </div>
-                            <div className="grid grid-cols-2">
+
                                 <p>
                                     Age :{" "}
                                     <span className="text-lg font-semibold">{`${myAge} yo`}</span>
@@ -77,13 +84,26 @@ export const Resume: React.FC<Props> = () => {
                                         29/09/2002
                                     </span>
                                 </p>
+
+                                <p>
+                                    Region :{" "}
+                                    <span className="text-lg font-semibold">
+                                        Guadeloupe
+                                    </span>
+                                </p>
+                                <p>
+                                    City :{" "}
+                                    <span className="text-lg font-semibold">
+                                        Les Abymes
+                                    </span>
+                                </p>
                             </div>
                         </div>
                         <div className="infos-section">
                             <div className="infos-title">
                                 <p className="text-xl">Language Skills</p>
                             </div>
-                            <div className="infos-language-item">
+                            <div className="info infos-language-item">
                                 <p>
                                     French :{" "}
                                     <span className="text-lg font-semibold">
@@ -92,7 +112,7 @@ export const Resume: React.FC<Props> = () => {
                                 </p>
                             </div>
                             <div className="divider"></div>
-                            <div className="infos-language-item">
+                            <div className="info infos-language-item">
                                 <p>
                                     English :{" "}
                                     <span className="text-lg font-semibold">
@@ -103,13 +123,47 @@ export const Resume: React.FC<Props> = () => {
                         </div>
                         <div className="infos-section">
                             <div className="infos-title">
-                                <p className="text-xl">My qualities</p>
+                                <p className="text-xl">Qualities</p>
                             </div>
                             <div className="flex flex-wrap space-x-4">
                                 {myQualities.map((quality) => (
                                     <InfosBadge title={quality} />
                                 ))}
                             </div>
+                        </div>
+                        <div className="infos-section">
+                            <div className="infos-title">
+                                <p className="text-xl">Interests</p>
+                            </div>
+                            <div className="flex flex-wrap space-x-4">
+                                {myInterest.map((interest) => (
+                                    <InfosBadge title={interest} />
+                                ))}
+                            </div>
+                        </div>
+                        <div className="infos-section">
+                            <div className="infos-title">
+                                <p className="text-xl">Other skills</p>
+                            </div>
+                            <ul className="list-disc">
+                                <li>Music production</li>
+                                <li>Computer assembly</li>
+                                <li>Computer maintenance</li>
+                            </ul>
+                        </div>
+                        <div className="infos-section" id="download-section">
+                            <div className="infos-title">
+                                <p className="text-xl">Download my resume !</p>
+                            </div>
+                            <p style={{ textAlign: "center" }}>
+                                Click to get a printable version of my resume.
+                                <br />
+                                <a href="link" id="download-button">
+                                    <button className="text-lg">
+                                        I want it
+                                    </button>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -119,18 +173,16 @@ export const Resume: React.FC<Props> = () => {
                     </p>
                     <div className="skills">
                         <div className="skill-section">
-                            <p className="skills-title text-xl">
-                                Programmation
-                            </p>
+                            <p className="skills-title text-xl">Programming</p>
                             <ProgressBar
                                 title="HTML/CSS"
-                                progressPercentage={90}
+                                progressPercentage={100}
                             />
                             <ProgressBar
                                 title="JAVASCRIPT"
                                 progressPercentage={80}
                             />
-                            <ProgressBar title="PHP" progressPercentage={70} />
+                            <ProgressBar title="PHP" progressPercentage={80} />
                             <ProgressBar title="JAVA" progressPercentage={65} />
                             <ProgressBar
                                 title="TYPESCRIPT"
@@ -210,8 +262,8 @@ export const Resume: React.FC<Props> = () => {
                         <div className="skill-section">
                             <p className="skills-title text-xl">Office tools</p>
                             <p className="office-section-text">
-                                Maîtrise experte de la suite Microsoft (Word,
-                                Excel, Powerpoint) et Google Workspace.
+                                Maîtrise très avancée de la suite Microsoft
+                                (Word, Excel, Powerpoint) et Google Workspace.
                             </p>
                         </div>
                     </div>
