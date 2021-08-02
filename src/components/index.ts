@@ -14,3 +14,4 @@ export { ProjectBadge } from "./ProjectBadge/ProjectBadge";
 export { ExperienceItem } from "./ExperienceItem/ExperienceItem";
 export { ProgressBar } from "./ProgressBar/ProgressBar";
 export { InfosBadge } from "./InfosBadge/InfosBadge";
+export { InfoBar } from "./InfoBar/InfoBar";

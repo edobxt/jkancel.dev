@@ -10,8 +10,6 @@ export const Home: React.FC<Props> = () => {
 
     return (
         <div>
-            {/*<div>Welcome to my website ! 🚀</div>
-            <br />*/}
             <div>
                 <p className="text-3xl">Hi 👋 I'm Jonathan,</p>
                 <p className="text-3xl">
