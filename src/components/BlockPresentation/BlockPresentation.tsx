@@ -10,9 +10,9 @@ export const BlockPresentation: React.FC<Props> = () => {
         <div className="presentation">
             <img src={logo} alt="avatar" className="avatar" />
             <div className="presentation-text">
-                I'm a junior developer and a student based in Guadeloupe a
+                I'm a junior developer and a student based in Guadeloupe, a
                 french caribbean island. I have been passionate about IT since
-                childhood, development allows me to express myself and help
+                childhood, programming allows me to express myself and help
                 others in their problems. If you want to collaborate with me
                 don't hesitate, get in touch !!
             </div>

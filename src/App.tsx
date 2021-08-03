@@ -15,7 +15,7 @@ const App: React.FC = () => {
     return (
         <div className="App">
             <div className="app_div center_all">
-                <InfoBar title="Site in developement" type="dev" />
+                <InfoBar title="Website in developement" type="dev" />
                 <BrowserRouter>
                     <Header />
                     <Switch>
