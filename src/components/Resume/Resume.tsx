@@ -145,7 +145,10 @@ export const Resume: React.FC<Props> = () => {
                             <div className="infos-title">
                                 <p className="text-xl">Other skills</p>
                             </div>
-                            <ul className="list-disc">
+                            <ul
+                                className="list-disc"
+                                style={{ padding: "10px", marginLeft: "5px" }}
+                            >
                                 <li>Music production</li>
                                 <li>Computer assembly</li>
                                 <li>Computer maintenance</li>
@@ -262,8 +265,8 @@ export const Resume: React.FC<Props> = () => {
                         <div className="skill-section">
                             <p className="skills-title text-xl">Office tools</p>
                             <p className="office-section-text">
-                                Maîtrise très avancée de la suite Microsoft
-                                (Word, Excel, Powerpoint) et Google Workspace.
+                                Very advanced mastery of the Microsoft suite
+                                (Word, Excel, Powerpoint) and Google Workspace.
                             </p>
                         </div>
                     </div>
@@ -276,12 +279,12 @@ export const Resume: React.FC<Props> = () => {
                 <ExperienceItem
                     title="CONCEPT X FORMATION"
                     date="Dec 2020 - Jan 2021"
-                    description="Stage conventioné - Développement d'un intranet et maintenance informatique"
+                    description="Agreed internship - Development of an intranet and IT maintenance"
                 />
                 <ExperienceItem
                     title="CANOPé"
                     date="Dec 2015"
-                    description="Stage de découverte - Infographie, Montage vidéo, Maintenance informatique"
+                    description="Discovery internship - Infographics, Video editing, Computer maintenance"
                 />
             </div>
             <div className="full-w-section education">
