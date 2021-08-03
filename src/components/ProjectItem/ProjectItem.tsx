@@ -19,8 +19,8 @@ export const ProjectItem: React.FC<Props> = (props) => {
                 if (props.badges) {
                     return (
                         <div className="badges-project flex space-x-2">
-                            {props.badges.map((title) => (
-                                <ProjectBadge title={title} />
+                            {props.badges.map((title, i) => (
+                                <ProjectBadge title={title} key={i} />
                             ))}
                         </div>
                     );

@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import {
     Home,
     Contact,
@@ -8,19 +8,23 @@ import {
     Resume,
     Header,
     InfoBar,
+    MissingPage,
 } from "./components/index";
 
 const App: React.FC = () => {
     return (
         <div className="App">
             <div className="app_div center_all">
-                <InfoBar title="Site en cours de développement" type="dev" />
+                <InfoBar title="Site in developement" type="dev" />
                 <BrowserRouter>
                     <Header />
-                    <Route path="/" exact component={Home} />
-                    <Route path="/contact" exact component={Contact} />
-                    <Route path="/projects" exact component={Projects} />
-                    <Route path="/resume" exact component={Resume} />
+                    <Switch>
+                        <Route path="/" exact component={Home} />
+                        <Route path="/contact" exact component={Contact} />
+                        <Route path="/projects" exact component={Projects} />
+                        <Route path="/resume" exact component={Resume} />
+                        <Route path="/" component={MissingPage} />
+                    </Switch>
                 </BrowserRouter>
             </div>
         </div>
