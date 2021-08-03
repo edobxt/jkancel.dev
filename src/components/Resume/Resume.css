@@ -12,6 +12,21 @@
     margin: 10px;
 }
 
+@media screen and (max-width: 750px) {
+    .Resume {
+        margin: 5px;
+        max-width: 100%;
+    }
+
+    .block-section {
+        margin: 5px;
+    }
+
+    .full-w-section {
+        padding: 0;
+    }
+}
+
 .full-w-section {
     background-color: #fefefe;
     border: 1px solid;

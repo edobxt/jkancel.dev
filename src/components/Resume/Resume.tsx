@@ -55,12 +55,12 @@ export const Resume: React.FC<Props> = () => {
                 />
             </p>
             <br />
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid lg:grid-cols-2 gap-4 grid-cols-1">
                 <div className="block-section">
                     <p className="text-2xl font-bold italic">Who am I ?</p>
                     <div className="infos">
                         <div className="infos-section">
-                            <div className="info grid grid-cols-2">
+                            <div className="info grid xl:grid-cols-2 grid-cols-1">
                                 <p>
                                     First Name :{" "}
                                     <span className="text-lg font-semibold">
@@ -161,7 +161,12 @@ export const Resume: React.FC<Props> = () => {
                             <p style={{ textAlign: "center" }}>
                                 Click to get a printable version of my resume.
                                 <br />
-                                <a href="link" id="download-button">
+                                <a
+                                    href="https://drive.google.com/file/d/1tXSSvICPmxZ10Si4atY3EJc0UuhvIZHY/view?usp=sharing"
+                                    target="_blank"
+                                    id="download-button"
+                                    rel="noreferrer"
+                                >
                                     <button className="text-lg">
                                         I want it
                                     </button>

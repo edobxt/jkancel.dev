@@ -1,11 +1,11 @@
 .skill-item {
     border: 1px solid;
     padding: 10px;
-    margin-top: 10px;
     width: 250px;
     position: relative;
+    margin: 10px auto;
+    height: 100px;
 
-    background-color: #fce7f3;
     -webkit-transition: background-color 200ms linear;
     -moz-transition: background-color 200ms linear;
     -o-transition: background-color 200ms linear;

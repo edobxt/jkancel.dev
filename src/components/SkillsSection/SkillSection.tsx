@@ -10,7 +10,7 @@ export const SkillSection: React.FC<Props> = () => {
             <p className="skill-section-headline text-2xl font-bold italic">
                 My Skills
             </p>
-            <div className="inline-flex space-x-4">
+            <div className="md:inline-flex md:space-x-4 grid-cols-1">
                 <SkillItem
                     logo="code"
                     name="Web Development"
