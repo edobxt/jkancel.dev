@@ -10,7 +10,7 @@ interface Props {
 
 export const ExperienceItem: React.FC<Props> = (props) => {
     return (
-        <div className="experience-item grid grid-cols-2">
+        <div className="experience-item lg:grid lg:grid-cols-2 grid-cols-1">
             <div className="experience-date">
                 <p>{props.date}</p>
             </div>
