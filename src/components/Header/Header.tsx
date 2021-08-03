@@ -18,7 +18,7 @@ export const Header: React.FC<Props> = () => {
                 // Si la route est valide on affiche
                 if (isRouteExist) {
                     return (
-                        <div className="grid grid-cols-3 gap-2">
+                        <div className="grid grid-cols-3 gap-2 header">
                             <Link to="/">
                                 <img
                                     src={logo}
