@@ -9,6 +9,8 @@ export const MissingPage: React.FC<Props> = () => {
             <p className="text-3xl">
                 Oops... It seems that this page is missing :/
             </p>
+            <br />
+            <p className="text-2xl">{"<Error404 />"}</p>
         </div>
     );
 };
