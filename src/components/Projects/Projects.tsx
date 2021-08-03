@@ -9,7 +9,7 @@ export const Projects: React.FC<Props> = () => {
         <div>
             <p className="text-2xl">Checkout all my projects 👨🏾‍💻</p>
             <br />
-            <div className="projects-container grid grid-cols-2 gap-4">
+            <div className="projects-container grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <ProjectItem
                     title="Ô'GÎTES"
                     description="Hostel booking app created as part of a group study project with the SCRUM methodology."
