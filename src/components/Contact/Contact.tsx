@@ -12,7 +12,7 @@ export const Contact: React.FC<Props> = () => {
             <div>
                 <p className="text-3xl">Collaborate with me ! 🤝🏾</p>
                 <br />
-                <p className="text-2xl">
+                <p className="lg:text-2xl text-xl">
                     If you need someone for{" "}
                     <ReactTypingEffect
                         text={textToType}
