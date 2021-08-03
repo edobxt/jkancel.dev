@@ -81,7 +81,7 @@ export const Resume: React.FC<Props> = () => {
                                 <p>
                                     Date of Birth :{" "}
                                     <span className="text-lg font-semibold">
-                                        29/09/2002
+                                        09/29/2002
                                     </span>
                                 </p>
 
