@@ -9,8 +9,10 @@ import {
     Header,
     InfoBar,
     MissingPage,
+    ProjectDetails,
 } from "./components/index";
 
+// Liste des projets
 const App: React.FC = () => {
     return (
         <div className="App">
@@ -22,6 +24,14 @@ const App: React.FC = () => {
                         <Route path="/" exact component={Home} />
                         <Route path="/contact" exact component={Contact} />
                         <Route path="/projects" exact component={Projects} />
+                        <Route
+                            path="/projects/ogites"
+                            component={ProjectDetails}
+                        />
+                        <Route
+                            path="/projects/geoworld"
+                            component={ProjectDetails}
+                        />
                         <Route path="/resume" exact component={Resume} />
                         <Route path="/" component={MissingPage} />
                     </Switch>
