@@ -1,0 +1,31 @@
+.project-page {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.project-logo {
+    width: 300px;
+    border: 1px solid;
+}
+
+.project-infos {
+    margin: 50px auto;
+}
+
+.project-description {
+    margin: auto;
+    width: 500px;
+}
+
+.project-logo {
+    margin-left: 70px;
+}
+
+.project-links {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.project-links > a:hover {
+    text-decoration: underline;
+}

@@ -3,6 +3,8 @@ import "./ProjectDetails.css";
 import { useLocation } from "react-router";
 import projectsDetails from "../../utils/projectsDetails";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 interface Props {}
 
@@ -40,26 +42,30 @@ export const ProjectDetails: React.FC<Props> = (props) => {
             project = projectsDetails.geoworld;
             break;
     }
+
+    const faLink = <FontAwesomeIcon icon={faExternalLinkAlt} />;
+
     return (
-        <div>
-            <Link to="/projects">
-                <button>Retour</button>
-            </Link>
-            <div className="grid grid-cols-2">
-                <div className="project-title items-center">
-                    <h1>TITLE : {project.title.toUpperCase()}</h1>
-                    <div className="project-date">{project.date}</div>
-                </div>
-                <div className="project-image">
-                    <img src={project.logo} alt="project-logo" />
+        <div className="project-page">
+            <div className="grid grid-cols-3">
+                <Link to="/projects">
+                    <button className="back-button">Back</button>
+                </Link>
+                <div className="project-title text-3xl font-bold">
+                    {project.title.toUpperCase()}
                 </div>
             </div>
-            <div className="links grid grid-cols-2">
-                <a href={project.url}>Checkout this application</a>
-                <a href={project.githubLink}>There's the github page</a>
+            <div className="project-date text-2xl">{project.date}</div>
+            <div className="project-infos grid grid-cols-2">
+                <div className="project-description">{project.description}</div>
+                <div className="project-logo">
+                    <img src={project.logo} alt={`${project.title}-logo`} />
+                </div>
             </div>
-            <br />
-            <div className="description">{project.description}</div>
+            <div className="project-links grid grid-cols-2">
+                <a href={project.url}>Checkout this application {faLink}</a>
+                <a href={project.githubLink}>View the github page {faLink}</a>
+            </div>
         </div>
     );
 };
