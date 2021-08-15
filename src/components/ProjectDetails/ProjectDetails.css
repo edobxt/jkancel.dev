@@ -29,3 +29,7 @@
 .project-links > a:hover {
     text-decoration: underline;
 }
+
+.back-button {
+    width: 100px;
+}

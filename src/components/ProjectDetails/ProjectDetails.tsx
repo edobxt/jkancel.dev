@@ -24,8 +24,9 @@ export const ProjectDetails: React.FC<Props> = (props) => {
     const route = location.pathname;
     // Récupérer uniquement le nom de la page
     const page = route.split("/")[2];
+    //console.log(`page name : ${page}`);
 
-    let project: Project = {
+    let undefinedProject: Project = {
         title: "undefined",
         date: "undefined",
         url: "#",
@@ -33,15 +34,20 @@ export const ProjectDetails: React.FC<Props> = (props) => {
         description: "undefined",
     };
 
-    switch (page) {
-        case "ogites":
-            project = projectsDetails.ogites;
-            break;
+    // switch (page) {
+    //     case "ogites":
+    //         project = projectsDetails.ogites;
+    //         break;
 
-        case "geoworld":
-            project = projectsDetails.geoworld;
-            break;
-    }
+    //     case "geoworld":
+    //         project = projectsDetails.geoworld;
+    //         break;
+    // }
+
+    const project =
+        projectsDetails.find((projectItem) => projectItem.path === page) ||
+        undefinedProject;
+    //console.log(project);
 
     const faLink = <FontAwesomeIcon icon={faExternalLinkAlt} />;
 
@@ -63,8 +69,12 @@ export const ProjectDetails: React.FC<Props> = (props) => {
                 </div>
             </div>
             <div className="project-links grid grid-cols-2">
-                <a href={project.url}>Checkout this application {faLink}</a>
-                <a href={project.githubLink}>View the github page {faLink}</a>
+                <a href={project.url} target="_blank" rel="noreferrer">
+                    Checkout this application {faLink}
+                </a>
+                <a href={project.githubLink} target="_blank" rel="noreferrer">
+                    View the github page {faLink}
+                </a>
             </div>
         </div>
     );
