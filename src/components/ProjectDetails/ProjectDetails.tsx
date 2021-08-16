@@ -5,6 +5,7 @@ import projectsDetails from "../../utils/projectsDetails";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { ProjectBadge } from "..";
 
 interface Props {}
 
@@ -17,6 +18,7 @@ export const ProjectDetails: React.FC<Props> = (props) => {
         githubLink: string;
         description: string;
         logo?: string;
+        badges?: string[];
     };
 
     // Récupérer la route actuelle
@@ -25,7 +27,7 @@ export const ProjectDetails: React.FC<Props> = (props) => {
     // Récupérer uniquement le nom de la page
     const page = route.split("/")[2];
     //console.log(`page name : ${page}`);
-
+    // Définir un projet en cas d'erreur
     let undefinedProject: Project = {
         title: "undefined",
         date: "undefined",
@@ -62,6 +64,19 @@ export const ProjectDetails: React.FC<Props> = (props) => {
                 </div>
             </div>
             <div className="project-date text-2xl">{project.date}</div>
+            <div className="project-badges">
+                {(() => {
+                    if (project.badges) {
+                        return (
+                            <div className="badges-project flex space-x-2">
+                                {project.badges.map((title, i) => (
+                                    <ProjectBadge title={title} key={i} />
+                                ))}
+                            </div>
+                        );
+                    }
+                })()}
+            </div>
             <div className="project-infos grid grid-cols-2">
                 <div className="project-description">{project.description}</div>
                 <div className="project-logo">

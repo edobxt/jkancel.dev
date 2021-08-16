@@ -14,7 +14,8 @@
 
 .project-description {
     margin: auto;
-    width: 500px;
+    margin-left: 150px;
+    width: 450px;
 }
 
 .project-logo {
@@ -24,6 +25,7 @@
 .project-links {
     margin: 0 auto;
     width: 600px;
+    margin-bottom: 50px;
 }
 
 .project-links > a:hover {
@@ -32,4 +34,9 @@
 
 .back-button {
     width: 100px;
+}
+
+.project-badges {
+    margin-top: 20px;
+    margin-left: 150px;
 }
