@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./Projects.css";
 import { ProjectItem } from "../index";
+import projectDetails from "../../utils/projectsDetails";
 
 interface Props {}
 
@@ -10,18 +11,16 @@ export const Projects: React.FC<Props> = () => {
             <p className="text-2xl">Checkout all my projects 👨🏾‍💻</p>
             <br />
             <div className="projects-container grid lg:grid-cols-2 grid-cols-1 gap-4">
-                <ProjectItem
-                    title="Ô'GÎTES"
-                    description="Hostel booking app created as part of a group study project with the SCRUM methodology."
-                    path="ogites"
-                    badges={["PHP", "MYSQL", "SCRUM"]}
-                />
-                <ProjectItem
-                    title="Geoworld"
-                    description="Geopolitical info app created as part of a group study project."
-                    path="geoworld"
-                    badges={["PHP", "MYSQL"]}
-                />
+                {projectDetails.map((project) => {
+                    return (
+                        <ProjectItem
+                            title={project.title}
+                            description={project.description}
+                            path={project.path}
+                            badges={project.badges}
+                        />
+                    );
+                })}
             </div>
         </div>
     );

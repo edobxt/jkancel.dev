@@ -1,1 +1,8 @@
-export const allRoutes: string[] = ["/", "/resume", "/projects", "/contact"];
+export const allRoutes: string[] = [
+    "/",
+    "/resume",
+    "/projects",
+    "/contact",
+    "/projects/ogites",
+    "/projects/geoworld",
+];
