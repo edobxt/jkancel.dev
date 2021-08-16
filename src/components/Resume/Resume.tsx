@@ -14,6 +14,9 @@ import gcp from "../../assets/gcp-logo.png";
 interface Props {}
 
 export const Resume: React.FC<Props> = () => {
+    const driveCvLink: string =
+        "https://drive.google.com/file/d/1vkfISlW_wLjVhclQongpKGJb4g5ENt-2/view?usp=sharing";
+
     const textToType: string[] = [
         "resume",
         "curriculum vitae",
@@ -162,7 +165,7 @@ export const Resume: React.FC<Props> = () => {
                                 Click to get a printable version of my resume.
                                 <br />
                                 <a
-                                    href="https://drive.google.com/file/d/1tXSSvICPmxZ10Si4atY3EJc0UuhvIZHY/view?usp=sharing"
+                                    href={driveCvLink}
                                     target="_blank"
                                     id="download-button"
                                     rel="noreferrer"
