@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect } from "react";
 import "./Resume.css";
 import { ExperienceItem, ProgressBar, InfosBadge } from "../index";
 import ReactTypingEffect from "react-typing-effect";
@@ -14,6 +15,10 @@ import gcp from "../../assets/gcp-logo.png";
 interface Props {}
 
 export const Resume: React.FC<Props> = () => {
+    useEffect(() => {
+        document.title = "Jonathan's Resume";
+    }, []);
+
     const driveCvLink: string =
         "https://drive.google.com/file/d/1vkfISlW_wLjVhclQongpKGJb4g5ENt-2/view?usp=sharing";
 
