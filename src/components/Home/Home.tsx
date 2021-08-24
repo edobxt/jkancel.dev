@@ -2,10 +2,14 @@ import * as React from "react";
 import "./Home.css";
 import ReactTypingEffect from "react-typing-effect";
 import { Button, BlockPresentation, SkillSection } from "../index";
+import { useEffect } from "react";
 
 interface Props {}
 
 export const Home: React.FC<Props> = () => {
+    useEffect(() => {
+        document.title = "Jonathan's Portfolio";
+    }, []);
     const textToType: string[] = ["developer !", "student !", "passionate !"];
 
     return (

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { ProjectBadge } from "..";
+import { useEffect } from "react";
 
 interface Props {}
 
@@ -52,6 +53,10 @@ export const ProjectDetails: React.FC<Props> = (props) => {
     //console.log(project);
 
     const faLink = <FontAwesomeIcon icon={faExternalLinkAlt} />;
+
+    useEffect(() => {
+        document.title = `Project : ${project.title.toUpperCase()}`;
+    });
 
     return (
         <div className="project-page">

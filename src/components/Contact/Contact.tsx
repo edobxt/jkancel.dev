@@ -1,10 +1,14 @@
 import * as React from "react";
 import "../Contact/Contact.css";
 import ReactTypingEffect from "react-typing-effect";
+import { useEffect } from "react";
 
 interface Props {}
 
 export const Contact: React.FC<Props> = () => {
+    useEffect(() => {
+        document.title = "Jonathan's Contact";
+    }, []);
     const textToType: string[] = ["a mission", "a project", "some advices"];
 
     return (
